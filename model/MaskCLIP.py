@@ -1,9 +1,11 @@
 import math
 import torch
 import torch.nn as nn
+import sys
+import os
 import torch.nn.functional as F
-
-import clip
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+import model.clip
 from IMDLBenCo.registry import MODELS
 from model.prompt_learner import TextEncoder, PromptLearner
 from model.clip_utils import SideAdapterNetwork
