@@ -1,6 +1,9 @@
 import torch
 from torch import nn
-from clip.simple_tokenizer import SimpleTokenizer as _Tokenizer
+import sys
+import os
+
+from model.clip.simple_tokenizer import SimpleTokenizer as _Tokenizer
 
 from pkg_resources import packaging
 from typing import Union, List
