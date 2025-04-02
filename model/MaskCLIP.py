@@ -5,7 +5,8 @@ import sys
 import os
 import torch.nn.functional as F
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-import model.clip
+from model import clip
+
 from IMDLBenCo.registry import MODELS
 from model.prompt_learner import TextEncoder, PromptLearner
 from model.clip_utils import SideAdapterNetwork
